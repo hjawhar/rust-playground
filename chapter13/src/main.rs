@@ -10,6 +10,10 @@ fn main() {
     example_4();
     println!("------------------------------------");
     example_5();
+    println!("------------------------------------");
+    exaple_iterators1();
+    println!("------------------------------------");
+    exaple_iterators2();
 }
 
 fn example_1() {
@@ -173,4 +177,26 @@ fn example_shirt() {
         "The user with preference {:?} gets {:?}",
         user_pref2, giveaway2
     );
+}
+
+fn exaple_iterators1() {
+    let v1 = vec![1, 2, 3];
+
+    let v1_iter = v1.iter();
+
+    for val in v1_iter {
+        println!("Got: {}", val);
+    }
+}
+
+
+fn exaple_iterators2() {
+    let v1: Vec<i32> = vec![1, 2, 3];
+
+    let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
+
+    for val in v2 {
+        println!("Example iterator2: Got: {}", val);
+    }
+    // assert_eq!(v2, vec![2, 3, 4]);
 }
