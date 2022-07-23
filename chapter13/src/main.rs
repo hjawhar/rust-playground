@@ -189,7 +189,6 @@ fn exaple_iterators1() {
     }
 }
 
-
 fn exaple_iterators2() {
     let v1: Vec<i32> = vec![1, 2, 3];
 
@@ -199,4 +198,4 @@ fn exaple_iterators2() {
         println!("Example iterator2: Got: {}", val);
     }
     // assert_eq!(v2, vec![2, 3, 4]);
-}
+} 
